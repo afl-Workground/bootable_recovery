@@ -531,6 +531,8 @@ int main(int argc, char** argv) {
   }
 
   Device::BuiltinAction next_recovery_action = Device::NO_ACTION;
+  device->InitDevice();
+
   while (true) {
     // We start adbd in recovery for the device with userdebug build or a unlocked bootloader.
     std::string usb_config =
