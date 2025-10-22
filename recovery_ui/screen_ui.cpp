@@ -590,15 +590,15 @@ void ScreenRecoveryUI::SetColor(UIElement e) const {
       break;
     case UIElement::INFO:
       if (fastbootd_logo_enabled_)
-        gr_color(0xfd, 0xd8, 0x35, 255);
-      else
-        gr_color(0xf8, 0x90, 0xff, 255);
+       gr_color(0x22, 0x7b, 0xf6, 255);
+    else
+       gr_color(0, 191, 255, 255);
       break;
     case UIElement::HEADER:
       if (fastbootd_logo_enabled_)
-        gr_color(0xfd, 0xd8,0x35, 255);
-      else
-        gr_color(0xf8, 0x90, 0xff, 255);
+       gr_color(0x22, 0x7b, 0xf6, 255);
+    else
+       gr_color(0, 191, 255, 255);
       break;
     case UIElement::MENU:
       gr_color(0xd8, 0xd8, 0xd8, 255);
@@ -606,9 +606,9 @@ void ScreenRecoveryUI::SetColor(UIElement e) const {
     case UIElement::MENU_SEL_BG:
     case UIElement::SCROLLBAR:
       if (fastbootd_logo_enabled_)
-        gr_color(0xe6, 0x51, 0x00, 255);
-      else
-        gr_color(0x7c, 0x4d, 0xff, 255);
+       gr_color(0x22, 0x7b, 0xf6, 255);
+    else
+       gr_color(0, 72, 190, 255);
       break;
     case UIElement::MENU_SEL_BG_ACTIVE:
       gr_color(0, 156, 100, 255);
